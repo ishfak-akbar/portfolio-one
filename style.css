@@ -141,6 +141,47 @@ section {
   line-height: 1.2;
 }
 
+.animated-text {
+  position: relative;
+  height: 65px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  animation: slideUp 0.8s ease-in-out 0.7s both;
+}
+
+.animated-text h5 {
+  background: linear-gradient(30deg, #f1c284, #fbf5ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.88em;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animated-text h5:nth-child(1) {
+  animation: text-move 12s infinite ease-in-out;
+}
+
+@keyframes text-move {
+  0%,
+  20% {
+    margin-top: 0;
+  }
+  25%,
+  45% {
+    margin-top: -70px;
+  }
+  50%,
+  70% {
+    margin-top: -140px;
+  }
+  75%,
+  100% {
+    margin-top: 0;
+  }
+}
+
 .action-container {
   display: flex;
   align-items: center;
@@ -423,8 +464,18 @@ section {
   background: rgba(255, 255, 255, 0.2);
   padding: 12px;
   border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
 }
-
+.project-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(241, 194, 132, 0.3),
+    0 0 40px rgba(251, 245, 239, 0.1), 0 0 10px rgba(255, 255, 255, 0.2);
+}
 .project-card div {
   display: flex;
   flex-direction: row;
@@ -535,6 +586,14 @@ section {
   width: 100%;
   max-width: 350px;
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.social-container a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(241, 194, 132, 0.3),
+    0 0 40px rgba(251, 245, 239, 0.1), 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .social-container a:nth-child(2) {
