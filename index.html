@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ishfak Akbar | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,6 +26,7 @@
         </nav>
       </div>
     </header>
+
     <main>
       <!-- Home Section -->
       <section id="home" class="hero">
@@ -51,6 +53,7 @@
                 <a
                   class="facebook"
                   href="https://www.facebook.com/ishfak.akbar.5/"
+                  target="_blank"
                   title="Facebook"
                 >
                   <i class="fab fa-facebook-f"></i>
@@ -58,6 +61,7 @@
                 <a
                   class="github"
                   href="https://github.com/ishfak-akbar"
+                  target="_blank"
                   title="GitHub"
                 >
                   <i class="fab fa-github"></i>
@@ -75,7 +79,6 @@
             <div class="profile-card">
               <img src="profile2.jpg" alt="profile" class="profile-img" />
             </div>
-
             <div class="about-text">
               <p class="about-title">About Me</p>
               <p>
@@ -118,8 +121,8 @@
             </div>
           </div>
         </div>
-        <!-- Skills Section -->
       </section>
+
       <!-- Skills Section -->
       <section id="skills" class="skills-section">
         <div class="container">
@@ -131,56 +134,42 @@
               </div>
               <span class="skill-name">HTML5</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fab fa-css3-alt"></i>
               </div>
               <span class="skill-name">CSS3</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fab fa-js-square"></i>
               </div>
               <span class="skill-name">JavaScript</span>
             </div>
-
-            <div class="skill-item">
-              <div class="skill-logo">
-                <i class="fab fa-java"></i>
-              </div>
-              <span class="skill-name">Java</span>
-            </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fab fa-python"></i>
               </div>
               <span class="skill-name">Python</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fab fa-php"></i>
               </div>
               <span class="skill-name">PHP</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fas fa-code"></i>
               </div>
               <span class="skill-name">C++</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fab fa-git-alt"></i>
               </div>
               <span class="skill-name">Git</span>
             </div>
-
             <div class="skill-item">
               <div class="skill-logo">
                 <i class="fas fa-laptop-code"></i>
@@ -196,20 +185,23 @@
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="project-card-container">
+            <!-- Project 1 -->
             <div class="project-card">
               <img src="gotii.png" alt="goti" />
               <div>
                 <h3>Goti</h3>
-                <a href="#">Details</a>
+                <a href="#goti-modal" class="details-btn">Details</a>
               </div>
             </div>
+            <!-- Project 2 -->
             <div class="project-card">
               <img src="gmi.png" alt="rms" />
               <div>
                 <h3>Grand Metro Inn</h3>
-                <a href="#">Details</a>
+                <a href="#gmi-modal" class="details-btn">Details</a>
               </div>
             </div>
+            <!-- Project 3 -->
             <div class="project-card">
               <img
                 src="https://ph-files.imgix.net/2f2f1b9b-b596-48b8-a228-7e1b3cfcb660.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=535&h=320&fit=max&frame=1&dpr=2"
@@ -217,14 +209,15 @@
               />
               <div>
                 <h3>Yawmly</h3>
-                <a href="#">Details</a>
+                <a href="#yawmly-modal" class="details-btn">Details</a>
               </div>
             </div>
+            <!-- Project 4 -->
             <div class="project-card">
               <img src="dw.png" alt="dripwear" />
               <div>
                 <h3>DripWear</h3>
-                <a href="#">Details</a>
+                <a href="#dripwear-modal" class="details-btn">Details</a>
               </div>
             </div>
           </div>
@@ -276,18 +269,15 @@
             </div>
             <div class="detail-container">
               <h3>Details</h3>
-
               <div class="details">
                 <div>
                   <span>Address</span>
                   <p>131/5 D-Block, Islampur, Majortilla, Sylhet</p>
                 </div>
-
                 <div>
                   <span>Phone</span>
                   <p>+8801743370440</p>
                 </div>
-
                 <div>
                   <span>Email</span>
                   <p>ishfakakbar24@gmail.com</p>
@@ -298,5 +288,320 @@
         </div>
       </section>
     </main>
+
+    <!-- Project Modals -->
+    <!-- Goti Modal -->
+    <div id="goti-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Goti - Ride Sharing Platform</h2>
+          <a href="#project" class="close-modal">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="project-overview">
+            <h3>Project Overview</h3>
+            <p>
+              Goti is a modern ride-sharing platform designed to make
+              transportation smarter, safer, and more affordable for everyone.
+              The app seamlessly connects passengers with nearby drivers,
+              offering quick and reliable rides at the tap of a button.
+            </p>
+            <p>
+              The platform also provides a dedicated Goti Driver App, enabling
+              drivers to manage ride requests, track earnings, and optimize
+              their routes effortlessly. With features like shared rides,
+              vehicle type selection, and parcel delivery, Goti ensures
+              convenience and flexibility for both riders and drivers alike.
+            </p>
+          </div>
+
+          <div class="key-features">
+            <h3>Key Features</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Real-time GPS Tracking</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-car"></i>
+                <span>Multiple Vehicle Options</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-share-alt"></i>
+                <span>Ride Sharing</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-wallet"></i>
+                <span>Secure Payments</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-box"></i>
+                <span>Parcel Delivery</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-star"></i>
+                <span>Rating System</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Tech Stack</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Google Maps API</span>
+              <span class="tech-tag">XML</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              View Source Code
+            </a>
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grand Metro Inn Modal -->
+    <div id="gmi-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Grand Metro Inn - Hotel Management System</h2>
+          <a href="#project" class="close-modal">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="project-overview">
+            <h3>Project Overview</h3>
+            <p>
+              Grand Metro Inn is a comprehensive desktop-based hotel management
+              system designed to streamline all hotel operations. This robust
+              application provides complete control over room management, guest
+              reservations, billing, and administrative tasks.
+            </p>
+            <p>
+              The system features an intuitive interface that allows hotel staff
+              to efficiently manage daily operations, track room availability,
+              handle guest check-ins/check-outs, and generate detailed reports
+              for better business insights.
+            </p>
+          </div>
+
+          <div class="key-features">
+            <h3>Key Features</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-bed"></i>
+                <span>Room Management</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Reservation System</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-user-check"></i>
+                <span>Guest Check-in/Check-out</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-receipt"></i>
+                <span>Billing & Invoicing</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-database"></i>
+                <span>CRUD Operations</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Reports & Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Tech Stack</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">SQLite3</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              View Source Code
+            </a>
+            <a href="#" class="project-link">
+              <i class="fas fa-download"></i>
+              Download Executable
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Yawmly Modal -->
+    <div id="yawmly-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Yawmly - Focused Study Planner</h2>
+          <a href="#project" class="close-modal">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="project-overview">
+            <h3>Project Overview</h3>
+            <p>
+              Yawmly started as a personal tool to plan study sessions in a
+              clean, distraction-free way. What began as a simple table turned
+              into a lightweight, offline-first PWA for daily planning.
+            </p>
+            <p>
+              It breaks your day into focused session blocks with color tags,
+              time tracking, and remarks - making it easier to stay on track.
+              You can start using it anonymously and sync later with email or
+              Google. A built-in D-Day tracker keeps big goals in sight.
+            </p>
+            <p>
+              The UI is minimal and fast, built to help - not overwhelm. The
+              biggest challenge was syncing local and online data smoothly,
+              especially with Google login. But every issue solved made it
+              stronger. Yawmly began for me, now it's here for you.
+            </p>
+          </div>
+
+          <div class="key-features">
+            <h3>Key Features</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-calendar-day"></i>
+                <span>Daily Session Planning</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tags"></i>
+                <span>Color-coded Tags</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <span>Time Tracking</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-wifi-slash"></i>
+                <span>Offline-First</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-user-ninja"></i>
+                <span>Anonymous Start</span>
+              </div>
+              <div class="feature-item">
+                <i class="fab fa-google"></i>
+                <span>Google Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Tech Stack</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PWA</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Google Auth</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              View Source Code
+            </a>
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DripWear Modal -->
+    <div id="dripwear-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>DripWear - Fashion E-commerce Platform</h2>
+          <a href="#project" class="close-modal">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="project-overview">
+            <h3>Project Overview</h3>
+            <p>
+              DripWear is a modern online clothing platform designed to bring
+              the latest fashion trends right to your fingertips. The app offers
+              a wide range of stylish apparel for men and women, combining
+              quality, comfort, and affordability.
+            </p>
+            <p>
+              With an intuitive shopping experience, secure payment options, and
+              fast delivery, DripWear makes it easy to stay on top of your
+              style. The platform also includes a DripWear Seller App, allowing
+              vendors to upload new collections, manage inventory, and track
+              sales effortlessly—all in one place.
+            </p>
+          </div>
+
+          <div class="key-features">
+            <h3>Key Features</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>E-commerce Platform</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-store"></i>
+                <span>Seller Management</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-search"></i>
+                <span>Advanced Search</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure Payments</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-box-open"></i>
+                <span>Inventory Management</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-truck"></i>
+                <span>Order Tracking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Tech Stack</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">XML</span>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              View Source Code
+            </a>
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
