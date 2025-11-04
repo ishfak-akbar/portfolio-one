@@ -878,41 +878,6 @@ section {
   background-color: #555;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 95%;
-    padding: 25px;
-  }
-
-  .modal-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .modal-header h2 {
-    font-size: 26px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-links {
-    flex-direction: column;
-  }
-
-  .tech-tags {
-    gap: 8px;
-  }
-
-  .tech-tag {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-}
-/* Additional styles for Grand Metro Inn modal */
 .system-architecture {
   margin-top: 25px;
 }
@@ -967,7 +932,6 @@ section {
   color: #f1c284;
 }
 
-/* Enhanced feature grid for more items */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1003,7 +967,7 @@ section {
   font-weight: 400;
   font-size: 14px;
 }
-/* Yawmly-specific styles */
+
 .project-story {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
@@ -1146,7 +1110,6 @@ section {
   margin-bottom: 8px;
 }
 
-/* Enhanced features grid for Yawmly */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
